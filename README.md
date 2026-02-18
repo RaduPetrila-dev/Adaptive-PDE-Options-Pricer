@@ -2,7 +2,7 @@
 
 High-performance C++ finite difference solver for European and American options with adaptive mesh refinement.
 
-[![Build and Test](https://github.com/RaduPetrila-dev/Adaptive-PDE-Options-Pricing-Engine/actions/workflows/ci.yml/badge.svg)](https://github.com/RaduPetrila-dev/Adaptive-PDE-Options-Pricing-Engine/actions/workflows/ci.yml)
+[![Build and Test](https://github.com/RaduPetrila-dev/Adaptive-PDE-Options-Pricer/actions/workflows/ci.yml/badge.svg)](https://github.com/RaduPetrila-dev/Adaptive-PDE-Options-Pricer/actions/workflows/ci.yml)
 
 ## Features
 
