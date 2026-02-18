@@ -17,3 +17,12 @@ double BlackScholes::price(const Option& opt) {
     return opt.K * std::exp(-opt.r * opt.T) * normalCDF(-d2) - 
            opt.S * normalCDF(-d1);
 }
+
+double BlackScholes::delta(const Option& opt) {
+    double d1 = (std::log(opt.S / opt.K) + 
+                (opt.r + 0.5 * opt.sigma * opt.sigma) * opt.T) /
+                (opt.sigma * std::sqrt(opt.T));
+    if (opt.type == OptionType::Call)
+        return normalCDF(d1);
+    return normalCDF(d1) - 1.0;
+}
